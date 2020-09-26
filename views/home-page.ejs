@@ -1,0 +1,32 @@
+
+<!-- pull in header info file -->
+<%- include('includes/header') %>
+
+<div class="container py-md-5">
+
+  <div class="row align-items-center">
+    <div class="quote-container" id="quote-container">
+      <form action="/new" method="POST" id="newquote-form">
+
+          <div class="form-group">
+            <div>
+              "<%= msg.quote %>"
+            </div>
+            <div>
+              - <%= msg.author %>
+            </div>
+            
+          </div>
+          <!-- <input type="submit" value="Submit and Obey" hidden > -->
+          <div class="button-container">
+            <button type="submit" id="btn-new-quote" class="btn-new-quote">[Get a] New Quote</button>
+          </div>
+  
+        </form>
+
+      </div>
+    </div>
+  </div>
+  
+<!-- footer begins -->
+<%- include('includes/footer') %>

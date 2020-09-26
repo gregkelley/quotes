@@ -1,0 +1,31 @@
+<!-- pull in header info file -->
+<%- include('includes/header') %>
+<!-- header ends here -->
+
+<div class="container py-md-5">
+
+  <div class="row align-items-center">
+    <div class="col-lg-5 py-3 py-md-5">
+      <h1 class="display-3">Create Your New Special Quote</h1>      
+      <p class="lead text-muted">Monkey balls are probably smarter than you. Approach with this in mind.</p>
+    </div>
+    <div class="col-lg-7 pl-lg-5 pb-3 py-lg-5">
+      <form action="/insert-quote" method="POST">
+
+          <div class="form-group">
+            <label class="text-muted mb-1"><small>Enter Your New Quote</small></label><br>
+            <textarea name="quote" id="t1" cols="50" rows="6" class="quote-input mb-1" wrap="soft" placeholder="type here"></textarea>
+            <br>
+            <label class="text-muted mb-1"><small>the Author</small></label><br>
+            <textarea name="author" id="a1" cols="50"  rows="1" class="quote-input" placeholder=""></textarea>
+            </div>
+
+          <button type="submit" class="py-3 mt-4 btn btn-lg btn-success btn-block">Add Your Special Quote</button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  
+<!-- footer begins -->
+<%- include('includes/footer') %>
